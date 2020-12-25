@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Arbitrary JS Extension</title>
+        <link href="codemirror/lib/codemirror.css" rel="stylesheet">
+        <style>
+         body {
+             margin: 0;
+             padding: 0;
+             font-size: 20px;
+         }
+         .container {
+             padding: 0 0.5rem;
+         }
+         textarea {
+             width: 0;
+             height: 0;
+         }
+         .CodeMirror {
+             border: 1px solid #ccc;
+             margin: 0.5rem 0;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="file" name="file">
+            <textarea>// Code here</textarea>
+            <button>Run</button>
+        </div>
+
+        <script src="codemirror/lib/codemirror.js"></script>
+        <script src="codemirror/mode/javascript/javascript.js"></script>
+        <script src="ext.js"></script>
+    </body>
+</html>

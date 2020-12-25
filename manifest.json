@@ -1,0 +1,25 @@
+{
+
+    "manifest_version": 2,
+    "name": "Arbitrary JS REPL Extension",
+    "description": "Run arbitrary JS code",
+    "version": "0.1",
+    "applications": {
+        "gecko": {
+            "id": "arb_ext@thejaswi.info"
+        }
+    },
+
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_title" : "Arb Ext"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": ["tabs"],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
